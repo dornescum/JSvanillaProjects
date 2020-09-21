@@ -3,40 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+  crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
-  <title>Reviews</title>
+  <title>Modal</title>
 </head>
 <body>
-  <main>
-    <section class="container">
-      <!-- title  -->
-      <div class="title">
-        <h2>Our Reviews</h2>
-        <div class="underline"></div>
-      </div>
-      <!-- Reviews  -->
-      <article class="review">
-        <div class="img-container">
-          <img src="person-1.jpeg" alt="persoana" id="person-img">
-        </div>
-        <h4 id="author">sara jones</h4>
-        <p id="job">ux designer</p>
-        <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nemo accusamus debitis praesentium et assumenda quaerat exercitationem error deleniti quae!</p>
-        <!-- prev next buttons  -->
-        <div class="button-container">
-          <button class="prev-btn">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="next-btn">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-         <!-- random button -->
-         <button class="random-btn">surprise me</button>
-      </article>
-    </section>
-  </main>
+  <!-- hero  -->
+  <header class="hero">
+     <div class="banner">
+       <h1>modal project</h1>
+       <button class="btn modal-btn">
+         open modal
+       </button>
+     </div>
+  </header>
+  <!-- end of hero  -->
+  <!-- modal  -->
+  <div class="modal-overlay">
+    <div class="modal-container">
+      <h3>modal content</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, obcaecati?</p>
+      <button class="close-btn"> 
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+  <!-- js  -->
   <script src="app.js"></script>
 </body>
 </html>
